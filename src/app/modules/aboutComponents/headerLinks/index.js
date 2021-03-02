@@ -89,8 +89,16 @@ const HeaderLinks = ({
                 className={styles.header_link_button}
                 onClick={onClickProject}
               >
-                Tech
+               About{' '}
               </div>
+              <div
+                className={styles.header_link_button}
+                onClick={onClickProject}
+                style={{paddingLeft: '20px'}}
+              >
+               Offstage
+              </div>
+             
             </Div>
             <animated.div
               style={{

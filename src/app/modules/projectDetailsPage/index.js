@@ -131,7 +131,7 @@ const ProjectDetailsPage = ({ match, style, history, location, startPageEndAnima
             }}
           />
 
-          {project.link ? (
+          {/*project.link ? (
             <a
               href={project.link.value}
               className={styles.project_link}
@@ -139,9 +139,10 @@ const ProjectDetailsPage = ({ match, style, history, location, startPageEndAnima
             >
               {project.link.type}
             </a>
-          ) : null}
+          ) : null*/}
         </Div>
       </Div>
+     
       {!isEmpty(project) ? (
         <Div animate className={styles.container}>
           <Div className={styles.shadow_header}>

@@ -32,25 +32,33 @@ const HeaderDescription = ({
         (props => (
           <Div style={props} className={styles.user_description_container}>
             <div className={styles.user_description}>
-              Hi, <br />I am <b className={styles.name}>Riyaz Ahmed</b>, A
-              Software Developer with 4+ years of Software Development
-              experience on various Platforms, Passionate to build Polished,
-              Innovative and well-detailed Apps with Fluid Animations to
-              complement the Design.
+              <br /><b className={styles.name}>Tisch New Theatre </b>
+              IS A STUDENT-LED THEATRE ORGANIZATION COMMITTED TO PRESENTING 
+              TECHNICALLY AND IDEOLOGICALLY AMBITIOUS WORK WITH THE INTENT TO 
+              TEACH, CHALLENGE, AND SYNTHESIZE THE ARTISTIC EFFORTS OF THE TISCH 
+              COMMUNITY AND NYU’S ENTIRE UNDERGRADUATE STUDENT BODY. 
               {/* <br/><br/> In my spare time, I usually read or play video games but mostly i try to work on new ideas and learn. */}
             </div>
-
+            <div className={styles.user_description} style={{textAlign:'center'}}>
+              <Div row justify align className={styles.user_button_container}>
+              <Div align
+                className={styles.user_button}
+                onClick={onClickTimeline} ><b className={styles.name}> ENTER</b><Underline isFirstTime={isFirstTime} /></Div></Div>
+              {/* <br/><br/> In my spare time, I usually read or play video games but mostly i try to work on new ideas and learn. */}
+            </div>
             <Div row justify align className={styles.user_button_container}>
-              Checkout my
+                  Introducing TNT's Spring Concert 
               <Div
                 align
                 className={styles.user_button}
                 onClick={onClickTimeline}
               >
-                Timeline
+                Offstage
                 <Underline isFirstTime={isFirstTime} />
               </Div>
-              and
+             
+              
+              {/*and
               <Div
                 align
                 className={styles.user_button}
@@ -60,7 +68,9 @@ const HeaderDescription = ({
                 <Underline isFirstTime={isFirstTime} />
               </Div>
               that I worked on.
-            </Div>
+              */}
+              </Div>
+              
 
             <ContactComponent className={styles.contact_container} />
           </Div>

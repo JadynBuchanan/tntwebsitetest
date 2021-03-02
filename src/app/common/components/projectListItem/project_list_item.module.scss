@@ -10,27 +10,32 @@
   flex-direction: column;
   text-decoration: none;
   
-  width: 183px;
-  min-width: 183px;
-  height: 311px;
+  width: 200px;
+  //min-width: 183px;
+  height: 30px;
   background: green;
   margin-right: 39px;
-  box-shadow: 0px 5px 12px 3px rgba(0, 0, 0, 0.2);      
+  padding-top: 10px;
+  padding-bottom: 10px;
+  //box-shadow: 0px 5px 12px 3px rgba(0, 0, 0, 0.9); 
+  border: 2px solid white;     
   border-radius: 12px;
   background-color: rgba(white, 0.8);
   transition: background-color 600ms ease;
   position: relative;
   cursor: pointer;
+  @include on_click_button;
 
   .image {
-    width: 120px;
+    width: 20px;
   }
 
   &:hover {
     .title_container {
 
       .title {
-        opacity: 0;
+        //opacity: 0;
+        text-align: center;
       }
 
       .description {
@@ -38,7 +43,7 @@
       }
 
       .overlay_view_project {
-        opacity: 1;
+        //opacity: 1;
         transform: translateY(0px);
       }
     }
@@ -46,10 +51,10 @@
 
   .title_container {
     height: 100px;
-    padding: 0px 18px 18px 18px;
-    color: $color-dark;
-    text-align: right;
-    position: relative;
+    //padding: 0px 18px 0px 18px;
+    color: white;
+    text-align: center;
+    //position: relative;
 
     .title {
       font-size: 25px;
@@ -58,8 +63,8 @@
     }
 
     .description {
-      margin-top: 6px;
-      font-size: 12px;
+      margin-top: 0px;
+      font-size: 10px;
       text-transform: capitalize;
       opacity: 1;
       transition: opacity 0.5s $transition-fast-in-slow-out;
@@ -78,7 +83,7 @@
 }
 
 .is_selected {
-  background-color: rgba(white, 1);
+  background-color: rgba(white, 0);
 }
 
 

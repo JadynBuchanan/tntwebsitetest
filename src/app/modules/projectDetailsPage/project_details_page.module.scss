@@ -119,10 +119,11 @@
 @include large {
   .header_container {
     align-items: unset;
-
+    
     .header_content {
       min-width: unset;
       margin: 0px 20px;
+      
     }  
   }
 
@@ -135,6 +136,7 @@
   .content_container {
     .content {
       padding: 0px 40px;
+      
     }
   }
 }
@@ -144,6 +146,7 @@
   .header_container {
     .header_content {
       margin: 0px 20px;
+      
     }  
   }
 

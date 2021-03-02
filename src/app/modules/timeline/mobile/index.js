@@ -19,7 +19,7 @@ class TimelineMobile extends Component {
     super(props);
     this.containerRef = React.createRef();
     this.state = {
-      selectedTimelineId: "nykaa",
+      selectedTimelineId: "legallyblonde",
       currentSlide: 0,
       projectsList: []
     }
@@ -144,9 +144,9 @@ class TimelineMobile extends Component {
                   className={styles.details_container}
                 >
                   <div className={styles.title}>{timeline.companyName}</div>
-                  <div className={styles.description}>{timeline.duration}</div>
+                  {/*<div className={styles.description}>{timeline.duration}</div>
                   <div className={styles.description}>{timeline.position}</div>
-                  <div className={styles.description}>{timeline.location}</div>
+              <div className={styles.description}>{timeline.location}</div>*/}
                 </Div>
               )}
             </Transition>

@@ -1,6 +1,6 @@
 import React, { memo } from 'react';
 import { useSpring, useTransition, animated } from 'react-spring';
-import profilePic from "Images/profile-pic.jpeg";
+import profilePic from "Images/tntblacklogo.jpg";
 import styles from './profile_pic.module.scss';
 
 const ProfilePic = ({ isFirstTime, isFullScreen, onClickProfilePic, screenSize }) => {

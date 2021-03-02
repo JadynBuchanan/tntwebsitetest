@@ -185,7 +185,7 @@ class RightContainer extends Component {
               <Div
                 row
                 style={props}
-                align="end"
+                //align="start"
                 className={styles.slide_inner_container}
               >
                 {map(projects[item.id], (project, index) => (
@@ -200,6 +200,7 @@ class RightContainer extends Component {
                         style={props}
                       />
                     )}
+                   
                   </Spring>
                 ))}
               </Div>
@@ -208,16 +209,7 @@ class RightContainer extends Component {
         </Div>
 
         <Div row>
-          <PaginationButton
-            isEnabled={isPrevButtonClickable}
-            onClick={()=>this.moveTo('previous')}
-            className={styles.left_button_container}
-          />
-          <PaginationButton
-            isEnabled={isNextButtonClickable}
-            onClick={()=>this.moveTo('next')}
-            isRight
-          />
+          
         </Div>
       </Div>
     );

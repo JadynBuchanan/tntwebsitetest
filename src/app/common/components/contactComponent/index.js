@@ -3,6 +3,11 @@ import iconEmail from "Icons/icon-email.png";
 import iconLinkedIn from "Icons/icon-linkedin.png";
 import iconGithub from "Icons/icon-github.png";
 import iconResume from 'Icons/icon-resume.png';
+import iconFacebook from 'Icons/icon-facebook.png';
+import iconInstagram from 'Icons/icon-instagram.png';
+import iconTwitter from 'Icons/icon-twitter.png';
+import iconYouTube from 'Icons/icon-youtube.png';
+import iconYouTubeWhite from 'Icons/icon-youtube-white.png';
 import iconEmailWhite from "Icons/icon-email-white.png";
 import iconLinkedInWhite from "Icons/icon-linkedin-white.png";
 import iconGithubWhite from "Icons/icon-github-white.png";
@@ -18,25 +23,31 @@ const ContactComponent = ({ className, isWhite, hideResume }) => {
       align
       className={`${styles.social_container} ${className}`}
     >
-      <a className={styles.icon_link} target="_blank" href="https://github.com/riyaz942">
+      <a className={styles.icon_link} target="_blank" href="https://www.youtube.com/user/tischnewtheatre">
         <img
-          src={isWhite ? iconGithubWhite : iconGithub}
+          src={isWhite ? iconYouTubeWhite : iconYouTube}
           className={styles.icon}
         />
       </a>
-      <a className={styles.icon_link} target="_blank" href="https://www.linkedin.com/in/riyaz942/">
+      <a className={styles.icon_link} target="_blank" href="https://twitter.com/TischNewTheatre">
         <img
-          src={isWhite ? iconLinkedInWhite : iconLinkedIn}
+          src={iconTwitter}
           className={styles.icon}
         />
       </a>
-      <a className={styles.icon_link} target="_blank" href="mailto:ahmed.riyaz94@gmail.com">
+      <a className={styles.icon_link} target="_blank" href="https://www.facebook.com/tischnewtheatre">
         <img
-          src={isWhite ? iconEmailWhite : iconEmail}
+          src={iconFacebook}
           className={styles.icon}
         />
       </a>
-      {
+      <a className={styles.icon_link} target="_blank" href="http://www.instagram.com/tischnewtheatre">
+        <img
+          src={iconInstagram}
+          className={styles.icon}
+        />
+      </a>
+      {/*
         !hideResume && (
           <a className={styles.icon_link} target="_blank" href="https://drive.google.com/file/d/1wsyIqp20IRSRLPZhYG5FqwdqLek8vx4X/view?usp=sharing">
           <img
@@ -45,7 +56,7 @@ const ContactComponent = ({ className, isWhite, hideResume }) => {
           />
         </a>  
         )
-      }
+        */}
     </Div>
   );
 };

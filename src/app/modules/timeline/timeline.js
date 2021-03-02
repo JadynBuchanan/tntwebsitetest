@@ -9,7 +9,7 @@ import RightContainer from "Common/containers/rightContainer";
 
 class Timeline extends Component {
   state = {
-    selectedTimelineId: "nykaa",
+    selectedTimelineId: "legallyblonde",
     selectionNext: true
   };
 
@@ -93,12 +93,13 @@ class Timeline extends Component {
             {timeline => props => (
               <Div style={props} className={styles.content_container}>
                 <div className={styles.title}>{timeline.companyName}</div>
-
+                
                 <Div align="start" className={styles.description_container}>
+                <div className={styles.description}>{timeline.location}</div>
                   <div className={styles.description}>{timeline.duration}</div>
-                  <div className={styles.description}>{timeline.position}</div>
-                  <div className={styles.description}>{timeline.location}</div>
-                  {/* <div className={styles.button}>view more</div> */}
+                  {/*<div className={styles.description}>{timeline.position}</div>
+            <div className={styles.description}>{timeline.location}</div>
+                  <div className={styles.button}>view more</div>*/}
                 </Div>
               </Div>
             )}

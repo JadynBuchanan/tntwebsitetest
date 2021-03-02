@@ -61,6 +61,7 @@ const ElementScroll = ({
 
   return (
     <Fragment>
+      {/*<img src="https://www.nps.gov/grca/planyourvisit/images/0531fyp.jpg?maxwidth=650&autorotate=false"/>*/}
       <animated.img
         ref={imageRef}
         className={styles.project_image}
@@ -106,12 +107,12 @@ const ElementScroll = ({
           }}
         >
           <div className={styles.title}>Platform</div>
-          <div className={styles.value}>{project.tech.join(" | ")}</div>
+          <div className={styles.value}>{project.location}</div>
 
           <div className={`${styles.title} ${styles.project_involvement}`}>
             Project Involment
           </div>
-          <div className={styles.value}>{project.involvement}</div>
+          <div className={styles.value}>{project.dates}</div>
         </Div>
       </animated.div>
     </Fragment>

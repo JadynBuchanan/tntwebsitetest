@@ -24,7 +24,8 @@ const ProjectListItem = ({ index, project, style, className }) => {
     >
       <div
         id="project-container"
-        style={{ ...style, zIndex: index }}
+        //style={{ ...style, zIndex: index }}
+        style={{marginRight:'200px'}}
         className={`${styles.slide_items} ${className} ${
           project.state == "CENTERED" ? styles.is_selected : ""
         }`}
@@ -32,19 +33,21 @@ const ProjectListItem = ({ index, project, style, className }) => {
         <Div fillParent align justify>
           <img
             id="project-image"
-            src={project.icon}
+            //src={project.icon}
             className={styles.image}
           />
+      
         </Div>
 
         <Div
-          alignSelf="stretch"
+          alignSelf="center"
           justify="start"
           align="end"
           className={styles.title_container}
         >
-          <div className={styles.title}>{project.name}</div>
-          <div className={styles.description}>{project.tech.join(" | ")}</div>
+          <div className={styles.title}>View More</div>
+          
+          
           <div className={styles.overlay_view_project}>View Project</div>
         </Div>
         <div className={styles.bottom_background_gradient}></div>

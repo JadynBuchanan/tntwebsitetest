@@ -17,18 +17,18 @@ const getHighlight = (highlight) => {
 }
 
 const ProjectDescription = ({ project, className }) => {
-  const { description, involvement, tech } = project;
+  const { description, dates, location } = project;
 
   return (
     <Div align="stretch" className={`${styles.description_container} ${className}`}>
       <Div row justify="space_between" className={styles.sub_info_container}>
         <Div>
           <div className={styles.title}>Platform</div>
-          <div className={styles.value}>{tech.join(" | ")}</div>
+          <div className={styles.value}>{location}</div>
         </Div>
         <Div align="end">
           <div className={styles.title}>Project Involment</div>
-          <div className={styles.value}>{involvement}</div>
+          <div className={styles.value}>{dates}</div>
         </Div>
       </Div>
 

@@ -14,7 +14,7 @@ class Projects extends Component {
   constructor(props) {
     super(props);
     this.isFirstAnimation = true;
-    const selectedTechId = 'react';
+    const selectedTechId = 'about';
     const imageAlignment = random(0, 3);
     const imagePosition = getImagePosition(selectedTechId, imageAlignment);
     const backgroundTransition = getBackgroundTransition(
@@ -26,7 +26,7 @@ class Projects extends Component {
     this.state = {
       selectedTechId,
       techTransitionAnimation: {
-        react: {
+        about: {
           ...backgroundTransition,
           imagePosition
         }
@@ -69,7 +69,7 @@ class Projects extends Component {
 
     return (
       <Div row fillParent align="stretch" className={styles.timeline_container}>
-        <img src={techDoodleImage} className={styles.background_static_image} />
+       {/*} <img src={techDoodleImage} className={styles.background_static_image} />*/}
 
         <Transition
           items={tech}
@@ -84,9 +84,9 @@ class Projects extends Component {
               const fromAnimation = tech.id == selectedTechId ? from : enter;
               const toAnimation = tech.id == selectedTechId ? enter : leave;
               const isReactRelated =
-                tech.id == "react" ||
-                tech.id == "react-native" ||
-                tech.id == "electron";
+                tech.id == "about" ||
+                tech.id == "joinus" ||
+                tech.id == "contact";
 
               return (
                 <Spring
@@ -115,7 +115,7 @@ class Projects extends Component {
                             right: imagePosition.right,
                             top: imagePosition.top,
                             bottom: imagePosition.bottom,
-                            transform: tech.id == 'android' ? imagePosition.transform : props.transform
+                            transform: tech.id == 'about' ? imagePosition.transform : props.transform
                           }}
                           className={styles.background_image}
                         ></img>
@@ -149,8 +149,8 @@ class Projects extends Component {
                 <div className={styles.title}>{tech.name}</div>
 
                 <Div align="start" className={styles.description_container}>
-                  <div className={styles.description}>{parseNewLine(tech.description)}</div>
-                  {/* <div className={styles.description}>{tech.position}</div> */}
+                  {/*<div className={styles.description}>{parseNewLine(tech.description)}</div>
+                   <div className={styles.description}>{tech.position}</div> */}
                 </Div>
               </Div>
             )}

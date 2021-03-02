@@ -4,20 +4,21 @@
 .right_container {
   overflow: hidden;
   z-index: 3;
-  padding-left: 200px;
+  padding-right: 0px;
 
   .slide_container {
     position: relative;
     align-self: stretch;
     height: 400px;
-    padding: 50px 0px 50px 260px;
+    padding-right: 600px;
+    //padding: 50px 0px 50px 260px;
   }
 
   .slide_inner_container {
     align-self: stretch;
     overflow-x: hidden;
     height: 400px;
-    padding: 50px 0px 50px 260px;
+    padding: 750px 0px 50px 200px;
     position: absolute;
     top: 0;
     left: 0;
@@ -35,7 +36,6 @@
   left:0;
   bottom: 0;
   right: 0;
-
   background-image: linear-gradient(to top, rgba($color-dark, 0.5), rgba(0, 0, 0, 0));
   border-radius: 12px;
 }

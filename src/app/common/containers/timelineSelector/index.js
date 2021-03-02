@@ -88,6 +88,7 @@ class TimelineSelector extends Component {
                         className={styles.logo}
                         src={item.restLogo}
                       />
+                      
                     )}
                 </Div>
               </Fragment>
