@@ -51,11 +51,7 @@ const ProjectImageGrid = ({ projectId, gridItemSelected }) => {
           <div
             key={index}
             onClick={() => gridItemSelected(index)}
-            className={[
-              styles.image_container,
-              styles[`grid_column_${projectImage.ratioWidth}`],
-              styles[`grid_row_${projectImage.ratioHeight}`]
-            ].join(" ")}
+            
           >
             <img
               src={projectImage.image}

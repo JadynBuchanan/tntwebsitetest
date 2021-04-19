@@ -3,7 +3,6 @@ import map from 'lodash/map';
 import styles from './project_description.module.scss';
 import Div from 'Common/components/div';
 import { parseNewLine } from 'Common/utils';
-
 const getHighlight = (highlight) => {
 
   if (highlight) {
@@ -23,19 +22,24 @@ const ProjectDescription = ({ project, className }) => {
     <Div align="stretch" className={`${styles.description_container} ${className}`}>
       <Div row justify="space_between" className={styles.sub_info_container}>
         <Div>
-          <div className={styles.title}>Platform</div>
+          <div className={styles.title}>Location</div>
           <div className={styles.value}>{location}</div>
         </Div>
         <Div align="end">
-          <div className={styles.title}>Project Involment</div>
+          <div className={styles.title}>Dates</div>
           <div className={styles.value}>{dates}</div>
         </Div>
       </Div>
 
       {map(description, (description, index) => {
         if (description.type == "text") {
-          return <div key={index} className={`${styles.text} ${getHighlight(description.highlight)}`}>{parseNewLine(description.value)}</div>;
-        } else if (description.type == 'points') {
+          return <div key={index} className={`${styles.text} ${getHighlight(description.highlight)}`} dangerouslySetInnerHTML={{ __html: parseNewLine(description.value) }}></div>;
+        } 
+        else if (description.type == 'quote') {
+          return (<div key={index} className={styles.quote}>"{description.value}" - {description.author}</div>)
+        }
+        
+        else if (description.type == 'points') {
 
           return (
             <Div key={index} className={`${styles.points_container} ${getHighlight(description.highlight)}`}>
@@ -43,14 +47,22 @@ const ProjectDescription = ({ project, className }) => {
               <ul className={styles.points_ul}>
                 {
                   map(description.value, (value, index) => (
-                    <li key={index}>{value}</li>
+                    <li key={index} dangerouslySetInnerHTML={{ __html: value }}></li>
+                    
                   ))
                 }
               </ul>
+              
+            
             </Div>
+            
           )
+          
         } else if (description.type == 'header') {
           return (<div key={index} className={styles.header}>{description.value}</div>)
+        }
+        else if (description.type == 'bolded') {
+          return (<div key={index} className={styles.header}><b>{description.value}</b></div>)
         }
 
         return null;

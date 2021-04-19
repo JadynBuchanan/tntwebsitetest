@@ -9,7 +9,8 @@ import mitLogoRest from 'Images/mit-logo-rest.png';
 
 import cameraLogoFirst from 'Images/camera.svg';
 import placeLogoRest from 'Images/prodname.png';
-
+import legallyblondeRest from 'Images/legallyblonde-logo-rest.png';
+import hairsprayRest from 'Images/hairspray-logo-rest.png';
 //import hairsprayBackgroundImage from 'Images/tntimages/hairspray/1.jpg';
 import nykaaBackgroundImage from 'Images/background/background-image-nykaa.jpg';
 import tailoredTechBackgroundImage from 'Images/background/background-image-tailoredtech.jpg';
@@ -34,8 +35,8 @@ export const timelineListValue = [
     roleDetail: 'In Nykaa I got to work as a React frontend developer, worked on production bugs and features like Mobile Signup flow implementation, Nykaa Pro, Recent search and search history and their AR makeup implementation with Modiface.',
     companyDetail: 'Nykaa is an e-commerce website offering beauty and wellness products from more than 500 leading brands. Nykaa follows an inventory-based model with warehouses in Mumbai, New Delhi, and Chennai as its offline presence is in 60 stores and expanding. It claims to have over 1000+ curated brands and 85,000 products.',
     firstLogo: cameraLogoFirst,
-    restLogo: placeLogoRest,
-    restMargin: 26, // the secound image margin because logo length is different
+    restLogo: legallyblondeRest,
+    restMargin: 40, // the secound image margin because logo length is different
     backgroundImage: legallyblondeBackgroundImage,
     projects: ['legallyblonde']
   },
@@ -49,7 +50,7 @@ export const timelineListValue = [
     roleDetail: 'In TailoredTech I got to experience many roles. I was initially working as an Android developer for a year then jumped on to these tech stacks :- Laravel, React-Native and React.',
     companyDetail: 'Tailored Tech was a service based startup specialised in web and mobile development, and had clients like Nykaa, Ezone, Sportobuddy, healthcode, hippily, wok express, etc.<br /> TailoredTech later got acqui-hired by Nykaa.',
     firstLogo: cameraLogoFirst,
-    restLogo: placeLogoRest,
+    restLogo: hairsprayRest,
     restMargin: 34,
     backgroundImage: hairsprayBackgroundImage,
     projects: ['hairspray']

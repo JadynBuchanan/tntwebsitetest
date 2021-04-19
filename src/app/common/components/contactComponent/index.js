@@ -3,15 +3,14 @@ import iconEmail from "Icons/icon-email.png";
 import iconLinkedIn from "Icons/icon-linkedin.png";
 import iconGithub from "Icons/icon-github.png";
 import iconResume from 'Icons/icon-resume.png';
-import iconFacebook from 'Icons/icon-facebook.png';
-import iconInstagram from 'Icons/icon-instagram.png';
-import iconTwitter from 'Icons/icon-twitter.png';
-import iconYouTube from 'Icons/icon-youtube.png';
-import iconYouTubeWhite from 'Icons/icon-youtube-white.png';
-import iconEmailWhite from "Icons/icon-email-white.png";
-import iconLinkedInWhite from "Icons/icon-linkedin-white.png";
-import iconGithubWhite from "Icons/icon-github-white.png";
-import iconResumeWhite from 'Icons/icon-resume-white.png';
+import iconFacebook from 'Icons/icon-facebook.svg';
+import iconInstagram from 'Icons/icon-instagram.svg';
+import iconTwitter from 'Icons/icon-twitter.svg';
+import iconYouTube from 'Icons/icon-youtube.svg';
+import iconYouTubeWhite from 'Icons/icon-youtube-white.svg';
+import iconFacebookWhite from "Icons/icon-facebook-white.svg";
+import iconTwitterWhite from "Icons/icon-twitter-white.svg";
+import iconInstagramWhite from "Icons/icon-instagram-white.svg";
 import Div from "Common/components/div";
 import styles from "./contact_component.module.scss";
 
@@ -31,19 +30,19 @@ const ContactComponent = ({ className, isWhite, hideResume }) => {
       </a>
       <a className={styles.icon_link} target="_blank" href="https://twitter.com/TischNewTheatre">
         <img
-          src={iconTwitter}
+          src={isWhite ? iconTwitterWhite : iconTwitter}
           className={styles.icon}
         />
       </a>
       <a className={styles.icon_link} target="_blank" href="https://www.facebook.com/tischnewtheatre">
         <img
-          src={iconFacebook}
+          src={isWhite ? iconFacebookWhite : iconFacebook}
           className={styles.icon}
         />
       </a>
       <a className={styles.icon_link} target="_blank" href="http://www.instagram.com/tischnewtheatre">
         <img
-          src={iconInstagram}
+          src={isWhite ? iconInstagramWhite : iconInstagram}
           className={styles.icon}
         />
       </a>

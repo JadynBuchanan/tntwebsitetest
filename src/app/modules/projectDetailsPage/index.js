@@ -162,6 +162,7 @@ const ProjectDetailsPage = ({ match, style, history, location, startPageEndAnima
             style={containerOpacityAnimation}
           >
             <ProjectDescription className={styles.content} project={project} />
+            
             <ProjectImageGrid
               projectId={projectId}
               gridItemSelected={(index)=> {
@@ -169,6 +170,7 @@ const ProjectDetailsPage = ({ match, style, history, location, startPageEndAnima
                 setGridIndex(index)
               }}
             />
+           
           </animated.div>
         </Div>
       ) : null}

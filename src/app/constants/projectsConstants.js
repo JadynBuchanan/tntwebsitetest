@@ -118,27 +118,41 @@ export const projectsListValue = {
     },
     description: [
       {
-        type: 'text',
+        type: 'quote',
         highlight: 'green',
-        value: "'Quote Placement'"
+        value: "SOMEHOW, TISCH NEW THEATRE REINVENTS ELLE WOODS IN 'LEGALLY BLONDE' ",
+        author: "WASHINGTON SQUARE NEWS"
       },
       {
         type: 'header',
-        value: 'About :',        
+        value: 'About',        
       },
       {
         type: 'text',
-        value: 'Legally Blonde: The Musical is the award-winning production ...'
+        value: '<i>Legally Blonde: The Musical</i> is the award-winning production following the transformation of Elle Woods from sorority president to Harvard lawyer: tackling stereotypes, scandals, and sexism along the way. At Harvard, she struggles with peers, professors, and her newly-engaged ex, but with a newfound purpose and a pink-dominant wardrobe, Ms. Woods proves that being true to yourself never goes out of style.'
       },
       {
         type: 'points',
         value: [
-          'Music & Lyrics: ',
-          'Directed by:',
-          'Production:',
-          'Presented: ',
-          'Running time:'
+          'Book by <b>Terrence McNally</b>; Music by <b>Marc Shaiman</b>; Lyrics by <b>Scott Wittman</b> and <b>Marc Shaiman</b>; Arrangements by <b>Marc Shaiman</b>; Orchestrations by <b>Marc Shaiman</b> and <b>Larry Blank</b>. <br><br>',
+          'Directed and choreographed by <b>Philip Colgan</b>; music directed by <b>Curtis Reynolds</b>; scenic design by <b>Kyle Hill</b>; costume design by <b>Liz McGlone</b>; lighting design by <b>Kelley Shih</b>; sound design by <b>Adrienne Bixler</b>; hair and make-up design by <b>Jahise LeBouef</b>.<br><br>',
+          'Production stage manager, <b>Jason Thinger</b>; production manager, <b>Christopher Pritchard</b>; technical supervisor, <b>Cherrish Curry</b>; associate producer, <b>Meg Whitehurst</b>; assistant producer, <b>Daniel Unitas</b>; associate director and choreographer, <b>Marc Anthony Ferre</b>.<br><br>',
+          'Presented by <b>Jason Arnold</b> in association with <b>Tisch New Theatre</b> through special arrangement with <b>Music Theatre International</b>.',
+        
         ]
+      },
+      {
+        type:"header",
+        value: "Program"
+      },
+      {
+        type:"text",
+        value: "<b>Running time</b>: 2 hours, 30 minutes."
+      },
+
+      {
+        type:"bolded",
+        value: "WITH: Jarrad Biron Green, Dante Jeanfelix, Damian Quinn, Kylie Cipola, Ashley Coia, Mallory Minerson, Emilio Madrid-Kuser, Bernardo Cabrera, Megan Callahan, Drew Carr, Cori Cook, Haley Callahan Fish, Taylor Johnson, Yvette Lu, KP Mendoza, David Merino, Whitney Mulhern, Amanda Pinto, AnnMarie Powers, Andy Richardson, Ian Shain, Zach Williams, Josh Zacher"
       }
     ]
   },

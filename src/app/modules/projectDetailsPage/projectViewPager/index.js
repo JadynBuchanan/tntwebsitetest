@@ -30,13 +30,15 @@ class ProjectViewPager extends Component {
       },
       pagination: {
         el: ".swiper-pagination",
+        type: 'fraction',
         clickable: true,
-        dynamicBullets: true
       },
-      on: {
-        slideChange: () =>
-          this.setState({ currentSlide: this.swiper.realIndex })
-      }
+      navigation: {
+        nextEl: '.swiper-button-next.customized-swiper-button-next',
+        prevEl: '.swiper-button-prev.customized-swiper-button-prev'
+      },
+
+      
     };
     const projectImages = getProjectImages(projectId);
     const totalItems = projectImages ? projectImages.length : 0;
@@ -56,17 +58,7 @@ class ProjectViewPager extends Component {
           ))}
         </Swiper>
 
-        <PaginationButton
-          isEnabled={currentSlide != 0}
-          onClick={() => this.swiper.slidePrev()}
-          className={styles.pagination_button_left}
-        />
-        <PaginationButton
-          isRight
-          isEnabled={currentSlide < totalItems - 1}
-          onClick={() => this.swiper.slideNext()}
-          className={styles.pagination_button_right}
-        />
+        
       </Div>
     );
   }

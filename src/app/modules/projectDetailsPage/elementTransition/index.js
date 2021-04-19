@@ -38,6 +38,7 @@ const ElementTransition = ({ hideTransitionElement, project, listingPageImageRec
             zIndex: 2
           }}
         />
+        
       )}
     </>
   )

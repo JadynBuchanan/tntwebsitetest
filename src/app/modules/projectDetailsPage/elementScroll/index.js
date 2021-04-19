@@ -106,11 +106,11 @@ const ElementScroll = ({
             opacity: containerOpacityAnimation.opacity,
           }}
         >
-          <div className={styles.title}>Platform</div>
+          <div className={styles.title}>Location</div>
           <div className={styles.value}>{project.location}</div>
 
           <div className={`${styles.title} ${styles.project_involvement}`}>
-            Project Involment
+            Dates
           </div>
           <div className={styles.value}>{project.dates}</div>
         </Div>
